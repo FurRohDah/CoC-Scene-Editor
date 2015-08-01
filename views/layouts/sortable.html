@@ -1,0 +1,83 @@
+<div id="sortable">
+    <style>
+
+      #contentList {
+        width: 80%!important;
+      }
+
+      .normal
+      {
+      }
+
+      #contentList ul {
+        list-style: none;
+      }
+      .sortable {
+			width: 310px;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.sortable.grid {
+			overflow: hidden;
+		}
+		.sortable li {
+			list-style: none;
+      height: 50px;
+      border: 1px rgba(89, 89, 89, 0.39) solid;
+      padding: 10px;
+      padding-left: 100px;
+      margin: 10px;
+      background: rgb(255,255,255);
+      color: rgb(25,25,25);
+      line-height: 1.5em;
+      -moz-box-shadow:  0px 0px 8px 1px rgba(128, 128, 128, 0.49);
+      -webkit-box-shadow:  0px 0px 8px 1px rgba(128, 128, 128, 0.49);
+      box-shadow:  0px 0px 8px 1px rgba(128, 128, 128, 0.49);
+		}
+    .sortable .if::before {
+      content: "if";
+      background-color: #9BD65C;
+      display: block;
+      height: 100%;
+      width: 80px;
+      margin: 0px;
+      margin: -10px;
+      margin-left: -98px;
+    }
+
+		.handle {
+			cursor: move;
+		}
+		.sortable.connected {
+			width: 200px;
+			min-height: 100px;
+			float: left;
+		}
+		li.disabled {
+			opacity: 0.5;
+		}
+		li.highlight {
+			background: #FEE25F;
+		}
+		li.sortable-placeholder {
+			border: 1px dashed #CCC;
+			background: none;
+		}
+
+    </style>
+
+    <ul id="contentList" class="sortable" style="width=400px!important">
+    </ul>
+
+
+    <script>
+
+    jQuery(function(){ //DOM Ready
+
+
+
+    });
+    </script>
+</div>
